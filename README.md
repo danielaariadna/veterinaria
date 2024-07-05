@@ -1,54 +1,48 @@
-# CodeIgniter 4 Framework
+# Página para gestión de una Veterinaria/Centro de adopción hecha para la materia Tópicos Avanzados de Tecnologías Web<br>
 
-## What is CodeIgniter?
+:blossom: PHP <br>
+:blossom: MVC CODEIGNITER <br>
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+:exclamation: **A tener en cuenta**<br>
+La página NO es responsive, es un proyecto para backend y en el momento que hice la página aún no tenía muchas herramientas para el front, por lo que podrás encontrar muchos errores en esa parte. Puede llegar a ser útil para algún desarrollador/a frontend que quiera re-hacerlo, el backend funciona perfecto y dentro está el volcado sql.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+**Consigna:**<br>
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# Mi Veterinaria
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+Implemente, aplicando el patrón MVC, una aplicación web denominada “Mi Veterinaria” que permite realizar altas, bajas, modificaciones y mostrar información de:
 
-## Important Change with index.php
+- **Mascotas**: Nombre, Raza, Nro. Registro, Edad, Fecha de Alta, Fecha de Defunción.
+- **Amos**: Nombre y Apellido, Dirección, Teléfono, Fecha de Alta.
+- **Médicos Veterinarios**: Nombre y Apellido, Especialidad, Teléfono personal, Fecha de Ingreso, Fecha de Egreso (para indicar los casos en que el médico deje de trabajar en Mi Veterinaria).
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## Relaciones
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- Una mascota puede haber tenido varios amos a lo largo de su vida y un amo puede tener o haber tenido varias mascotas. ¿Cómo puede representar esta restricción?
+- Un veterinario puede atender a varias mascotas y una mascota puede ser o haber sido atendida por más de un veterinario.
+- La relación amo-mascota puede finalizar por dos motivos: 
+  - Venta de la mascota
+  - Fallecimiento de la mascota
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## Se Pide
 
-## Repository Management
+- Implementar el modelo para mascotas, amos y veterinarios.
+- Implementar las vistas: Menú principal, Altas, Bajas, Modificaciones y Mostrar.
+- En la vista mostrar se deben considerar cinco opciones:
+  1. Mascotas
+  2. Amos
+  3. Veterinarios
+  4. Dado un amo (seleccionado de una lista de amos), mostrar todas las mascotas que tiene o ha tenido
+  5. Dada una mascota (seleccionada de una lista de mascotas) mostrar todos los amos que ha tenido (asuma que una mascota solo puede tener un amo a la vez).
+- En la vista Alta, deberá permitir registrar un par Amo-Mascota. Si ambos ya están cargados, solo se deberá cargar la relación Amo-Mascota, en caso contrario, previamente se deberá dar de alta el amo y/o la mascota. En el caso de los veterinarios, deberá registrar los datos personales y especialidad de un nuevo médico veterinario.
+- La vista Baja eliminará la relación Amo-Mascota y se indicará el motivo: Venta o fallecimiento. En el último caso, se registrará en los datos de la mascota la fecha de fallecimiento y la fecha de fin en la relación Amo-Mascota. En caso de venta solo se registrará esta última fecha. Para el caso de la baja de un veterinario, se registrará la fecha de fin de la relación contractual con la veterinaria del médico.
+- La vista Modificación solo permitirá actualizar los datos de un amo, una mascota o un veterinario.
+- Implementar el Controlador que permita realizar las tareas descriptas previamente.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## Criterios de Evaluación
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+- Correcta utilización del patrón MVC en CodeIgniter.
+- Funcionalidades de “Mi Veterinaria”.
+- Incorporación de datos correctos en los campos de la vista Alta.
+- Interfaz de usuario.
+- Entrega en tiempo y forma.
