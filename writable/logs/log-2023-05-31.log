@@ -1,0 +1,168 @@
+CRITICAL - 2023-05-31 01:23:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:25:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:25:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:27:17 --> Undefined variable $mascota
+in APPPATH\Controllers\amoController.php on line 117.
+ 1 APPPATH\Controllers\amoController.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascota', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:28:35 --> Undefined variable $adopcionDetallaa
+in APPPATH\Controllers\amoController.php on line 134.
+ 1 APPPATH\Controllers\amoController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionDetallaa', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:28:43 --> Undefined variable $adopcionDetallaa
+in APPPATH\Controllers\amoController.php on line 134.
+ 1 APPPATH\Controllers\amoController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionDetallaa', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:29:24 --> Undefined variable $adopcionDetallaa
+in APPPATH\Controllers\amoController.php on line 134.
+ 1 APPPATH\Controllers\amoController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionDetallaa', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:29:27 --> Undefined variable $adopcionDetallaa
+in APPPATH\Controllers\amoController.php on line 134.
+ 1 APPPATH\Controllers\amoController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionDetallaa', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:32:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:32:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:33:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:33:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:34:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\amoController.php on line 124.
+ 1 APPPATH\Controllers\amoController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\amoController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:35:56 --> Undefined array key "nombre_mascota"
+in APPPATH\Views\amos\mostrarA.php on line 51.
+ 1 APPPATH\Views\amos\mostrarA.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_mascota"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\mostrarA.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\mostrarA.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/amos/mostrarA', [], true)
+ 5 APPPATH\Controllers\amoController.php(137): view('/amos/mostrarA', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->mostrarA()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:56:26 --> Class "App\Controllers\amoModel" not found
+in APPPATH\Controllers\mascotaController.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:56:53 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 131.
+ 1 APPPATH\Controllers\mascotaController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 01:59:33 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 132.
+ 1 APPPATH\Controllers\mascotaController.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:02:23 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 131.
+ 1 APPPATH\Controllers\mascotaController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:02:52 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 131.
+ 1 APPPATH\Controllers\mascotaController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:02:54 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 131.
+ 1 APPPATH\Controllers\mascotaController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:02:59 --> Undefined variable $adopcionesDetalladas
+in APPPATH\Controllers\mascotaController.php on line 131.
+ 1 APPPATH\Controllers\mascotaController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcionesDetalladas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:04:35 --> Undefined array key "nro_registro"
+in APPPATH\Controllers\mascotaController.php on line 118.
+ 1 APPPATH\Controllers\mascotaController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nro_registro"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 02:22:24 --> Undefined variable $mascota
+in APPPATH\Views\mascotas\mostrarM.php on line 72.
+ 1 APPPATH\Views\mascotas\mostrarM.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascota', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarM.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarM.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/mascotas/mostrarM', [], true)
+ 5 APPPATH\Controllers\mascotaController.php(131): view('/mascotas/mostrarM', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarM()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

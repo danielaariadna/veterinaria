@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-01 02:48:11 --> Undefined array key "fecha_inicio"
+in APPPATH\Views\mascotas\mostrarMascotas.php on line 48.
+ 1 APPPATH\Views\mascotas\mostrarMascotas.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_inicio"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarMascotas.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarMascotas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mascotas/mostrarMascotas', [], true)
+ 5 APPPATH\Controllers\mascotaController.php(21): view('mascotas/mostrarMascotas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarMascotas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

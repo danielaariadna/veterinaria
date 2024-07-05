@@ -1,0 +1,1173 @@
+CRITICAL - 2023-05-29 00:27:53 --> Undefined variable $registro
+in APPPATH\Controllers\mascotaController.php on line 25.
+ 1 APPPATH\Controllers\mascotaController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $registro', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 01:52:30 --> Undefined array key "fecha_defunción"
+in APPPATH\Views\mascotas\mostrarMascotas.php on line 33.
+ 1 APPPATH\Views\mascotas\mostrarMascotas.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_defunción"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarMascotas.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\mascotas\\mostrarMascotas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mascotas/mostrarMascotas', [], true)
+ 5 APPPATH\Controllers\mascotaController.php(20): view('mascotas/mostrarMascotas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->mostrarMascotas()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 02:10:12 --> mysqli_sql_exception: Column 'raza' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 02:10:12 --> Column 'raza' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (:nombre:, :raza:, :especie:, :sexo:, :edad:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\mascotaController.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 02:11:23 --> mysqli_sql_exception: Column 'raza' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 02:11:23 --> Column 'raza' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (:nombre:, :raza:, :especie:, :sexo:, :edad:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\mascotaController.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 02:11:56 --> mysqli_sql_exception: Column 'raza' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 02:11:56 --> Column 'raza' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (\'Daniel\', NULL, NULL, NULL, NULL, \'2023-05-28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mascotas` (`nombre`, `raza`, `especie`, `sexo`, `edad`, `fecha_alta`) VALUES (:nombre:, :raza:, :especie:, :sexo:, :edad:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\mascotaController.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 02:40:01 --> Undefined variable $veterinario
+in APPPATH\Models\veterinarioModel.php on line 11.
+ 1 APPPATH\Models\veterinarioModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\veterinarioModel.php', 11)
+ 2 APPPATH\Controllers\veterinarioController.php(38): App\Models\veterinarioModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 02:41:23 --> Undefined array key 0
+in APPPATH\Models\veterinarioModel.php on line 11.
+ 1 APPPATH\Models\veterinarioModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\veterinarioModel.php', 11)
+ 2 APPPATH\Controllers\veterinarioController.php(38): App\Models\veterinarioModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 02:42:28 --> Undefined variable $amos
+in APPPATH\Models\veterinarioModel.php on line 22.
+ 1 APPPATH\Models\veterinarioModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $amos', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\veterinarioModel.php', 22)
+ 2 APPPATH\Controllers\veterinarioController.php(38): App\Models\veterinarioModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 02:43:05 --> Call to undefined function App\Models\insert()
+in APPPATH\Models\veterinarioModel.php on line 22.
+ 1 APPPATH\Controllers\veterinarioController.php(38): App\Models\veterinarioModel->insertar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:05:25 --> Undefined variable $veterinario
+in APPPATH\Controllers\mascotaController.php on line 36.
+ 1 APPPATH\Controllers\mascotaController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:05:48 --> Undefined variable $mascotas
+in APPPATH\Models\mascotaModel.php on line 11.
+ 1 APPPATH\Models\mascotaModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\mascotaModel.php', 11)
+ 2 APPPATH\Controllers\mascotaController.php(36): App\Models\mascotaModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:06:11 --> Undefined array key "nro_registro"
+in APPPATH\Models\mascotaModel.php on line 11.
+ 1 APPPATH\Models\mascotaModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nro_registro"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\mascotaModel.php', 11)
+ 2 APPPATH\Controllers\mascotaController.php(36): App\Models\mascotaModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:06:32 --> Undefined variable $existingMascota
+in APPPATH\Models\mascotaModel.php on line 11.
+ 1 APPPATH\Models\mascotaModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingMascota', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\mascotaModel.php', 11)
+ 2 APPPATH\Controllers\mascotaController.php(36): App\Models\mascotaModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:06:42 --> Undefined variable $veterinario
+in APPPATH\Controllers\mascotaController.php on line 38.
+ 1 APPPATH\Controllers\mascotaController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\mascotaController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->cargarMascota()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 03:19:12 --> Undefined array key "fecha_alta"
+in APPPATH\Views\veterinarios\mostrarVeterinarios.php on line 28.
+ 1 APPPATH\Views\veterinarios\mostrarVeterinarios.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_alta"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\mostrarVeterinarios.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\mostrarVeterinarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('veterinarios/mostrarVeterinarios', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(22): view('veterinarios/mostrarVeterinarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->mostrarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 03:54:07 --> mysqli_sql_exception: Column 'especialidad' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\veterinarioModel.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 03:54:07 --> Column 'especialidad' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (:nombre:, :apellido:, :especialidad:, :telefono:, :fecha_ingreso:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\veterinarioModel.php(22): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 03:54:54 --> mysqli_sql_exception: Column 'especialidad' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\veterinarioModel.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 03:54:54 --> Column 'especialidad' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (:nombre:, :apellido:, :especialidad:, :telefono:, :fecha_ingreso:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\veterinarioModel.php(22): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 03:56:54 --> mysqli_sql_exception: Column 'especialidad' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\veterinarioModel.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 03:56:54 --> Column 'especialidad' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (:nombre:, :apellido:, :especialidad:, :telefono:, :fecha_ingreso:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\veterinarioModel.php(22): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 03:56:56 --> mysqli_sql_exception: Column 'especialidad' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\veterinarioModel.php(22): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 03:56:56 --> Column 'especialidad' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (\'Juan\', \'Sanchez\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `apellido`, `especialidad`, `telefono`, `fecha_ingreso`) VALUES (:nombre:, :apellido:, :especialidad:, :telefono:, :fecha_ingreso:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\veterinarioModel.php(22): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\veterinarioController.php(36): App\Models\veterinarioModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->cargarVeterinario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:00:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:03:00 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:03:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:07:21 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:07:29 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:09:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 04:47:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(48): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:03:49 --> Call to undefined function App\Models\existingAmo()
+in APPPATH\Models\amoModel.php on line 18.
+ 1 APPPATH\Controllers\amoController.php(38): App\Models\amoModel->insertar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:04:31 --> Call to undefined function App\Models\existingAmo()
+in APPPATH\Models\amoModel.php on line 18.
+ 1 APPPATH\Controllers\amoController.php(38): App\Models\amoModel->insertar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 18:26:13 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\amoModel.php(20): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\amoController.php(49): App\Models\amoModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 18:26:13 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (:nombre:, :apellido:, :dni:, :direccion:, :telefono:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\amoModel.php(20): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\amoController.php(49): App\Models\amoModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 18:28:34 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\veterinaria\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\veterinaria\app\Models\amoModel.php(20): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\veterinaria\app\Controllers\amoController.php(49): App\Models\amoModel->insertar(Array)
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+#11 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-29 18:28:34 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (NULL, NULL, \'212121\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `amos` (`nombre`, `apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (:nombre:, :apellido:, :dni:, :direccion:, :telefono:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\amoModel.php(20): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\amoController.php(49): App\Models\amoModel->insertar([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->cargarAmo()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:38:28 --> Invalid file: "amos/Modificar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('amos/Modificar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('amos/Modificar', [], true)
+ 3 APPPATH\Controllers\amoController.php(97): view('amos/Modificar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->modificarAmo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:40:41 --> Undefined variable $datosAmo
+in APPPATH\Views\amos\modificar.php on line 14.
+ 1 APPPATH\Views\amos\modificar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datosAmo', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('amos/Modificar', [], true)
+ 5 APPPATH\Controllers\amoController.php(97): view('amos/Modificar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->modificarAmo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:46:06 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 394.
+ 1 APPPATH\Views\amos\modificarAmo.php(44): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificarAmo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('amos/modificarAmo', [], true)
+ 5 APPPATH\Controllers\amoController.php(15): view('amos/modificarAmo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->modificarAmos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 18:46:15 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 394.
+ 1 APPPATH\Views\amos\modificarAmo.php(44): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificarAmo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('amos/modificarAmo', [], true)
+ 5 APPPATH\Controllers\amoController.php(15): view('amos/modificarAmo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->modificarAmos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 19:01:22 --> Undefined variable $existingAmo
+in APPPATH\Views\amos\modificarAmo.php on line 36.
+ 1 APPPATH\Views\amos\modificarAmo.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingAmo', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificarAmo.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\amos\\modificarAmo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('amos/modificarAmo', [], true)
+ 5 APPPATH\Controllers\amoController.php(15): view('amos/modificarAmo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\amoController->modificarAmos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\amoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 21:20:57 --> mysqli_sql_exception: Unknown column 'registro' in 'where clause' in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\veterinaria\app\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 21:20:57 --> Unknown column 'registro' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = :registro:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 21:21:49 --> mysqli_sql_exception: Unknown column 'registro' in 'where clause' in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\veterinaria\app\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 21:21:49 --> Unknown column 'registro' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = :registro:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 21:21:57 --> mysqli_sql_exception: Unknown column 'registro' in 'where clause' in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\veterinaria\app\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 21:21:57 --> Unknown column 'registro' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = :registro:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 21:22:13 --> mysqli_sql_exception: Unknown column 'registro' in 'where clause' in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\veterinaria\app\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 21:22:13 --> Unknown column 'registro' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = :registro:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 21:22:20 --> mysqli_sql_exception: Unknown column 'registro' in 'where clause' in C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\veterinaria\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\veterinaria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\veterinaria\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\veterinaria\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\veterinaria\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\veterinaria\app\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\veterinaria\app\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+#8 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+#9 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+#10 C:\xampp\htdocs\veterinaria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\veterinaria\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-29 21:22:20 --> Unknown column 'registro' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mascotas`
+WHERE `registro` = \'11111\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascotas`
+WHERE `registro` = :registro:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\mascotaModel.php(30): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\mascotaController.php(80): App\Models\mascotaModel->existingMascota('11111')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:22:36 --> Invalid file: "/mascotas/modificar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/mascotas/modificar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/mascotas/modificar', [], true)
+ 3 APPPATH\Controllers\mascotaController.php(83): view('/mascotas/modificar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mascotaController->modificarMascotas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:43:18 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:45:08 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:45:41 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:46:54 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:49:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:51:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(42): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:58:18 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(41): CodeIgniter\Model->update('2023-05-24')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:58:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(41): CodeIgniter\Model->update('2023-05-24')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 21:58:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(41): CodeIgniter\Model->update('2023-05-09')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:01:26 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(41): CodeIgniter\Model->update('2023-05-09')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:18:08 --> Undefined variable $existingVeterinario
+in APPPATH\Views\veterinarios\modificarV.php on line 14.
+ 1 APPPATH\Views\veterinarios\modificarV.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:20:50 --> Undefined variable $existingVeterinario
+in APPPATH\Views\veterinarios\modificarV.php on line 14.
+ 1 APPPATH\Views\veterinarios\modificarV.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:21:11 --> Undefined variable $existingVeterinario
+in APPPATH\Views\veterinarios\modificarV.php on line 14.
+ 1 APPPATH\Views\veterinarios\modificarV.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:22:36 --> Undefined variable $existingVeterinario
+in APPPATH\Views\veterinarios\modificarV.php on line 14.
+ 1 APPPATH\Views\veterinarios\modificarV.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:22:53 --> Undefined variable $existingVeterinario
+in APPPATH\Views\veterinarios\modificarV.php on line 14.
+ 1 APPPATH\Views\veterinarios\modificarV.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:29:00 --> Undefined array key "fecha-alta"
+in APPPATH\Views\veterinarios\modificarV.php on line 50.
+ 1 APPPATH\Views\veterinarios\modificarV.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha-alta"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:29:13 --> Undefined array key "fecha_alta"
+in APPPATH\Views\veterinarios\modificarV.php on line 50.
+ 1 APPPATH\Views\veterinarios\modificarV.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_alta"', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\veterinarios\\modificarV.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/veterinarios/modificarV', [], true)
+ 5 APPPATH\Controllers\veterinarioController.php(77): view('/veterinarios/modificarV', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->modificarVeterinarios()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:41:18 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(41): CodeIgniter\Model->update('2023-05-19')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:49:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update('2023-05-04')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:51:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update('2023-05-04')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:52:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update('2023-05-02')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:53:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update('2023-05-02')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:53:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update('2023-05-10')
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:57:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:57:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:58:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:58:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(37): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(56): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:04:12 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(31): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(59): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:04:21 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(31): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(59): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:07:44 --> Undefined variable $result
+in APPPATH\Controllers\veterinarioController.php on line 62.
+ 1 APPPATH\Controllers\veterinarioController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\veterinaria\\app\\Controllers\\veterinarioController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:08:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(31): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(59): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:12:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(31): CodeIgniter\Model->update('2023-04-30')
+ 5 APPPATH\Controllers\veterinarioController.php(70): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:13:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(31): CodeIgniter\Model->update('2023-05-11')
+ 5 APPPATH\Controllers\veterinarioController.php(70): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:15:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(33): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(70): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:15:12 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(33): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(70): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:19:06 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(34): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(71): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:19:56 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(34): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(71): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:20:29 --> Undefined variable $dni
+in APPPATH\Models\veterinarioModel.php on line 34.
+ 1 APPPATH\Models\veterinarioModel.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\veterinaria\\app\\Models\\veterinarioModel.php', 34)
+ 2 APPPATH\Controllers\veterinarioController.php(71): App\Models\veterinarioModel->bajaVeterinario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:20:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(35): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(71): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:26:16 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\veterinarioModel.php(36): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\veterinarioController.php(71): App\Models\veterinarioModel->bajaVeterinario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\veterinarioController->nuevaBaja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\veterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:39:03 --> Undefined variable $existingVeterinario
+in APPPATH\Views\adopciones\bajaAdopcion.php on line 35.
+ 1 APPPATH\Views\adopciones\bajaAdopcion.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existingVeterinario', 'C:\\xampp\\htdocs\\veterinaria\\app\\Views\\adopciones\\bajaAdopcion.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\veterinaria\\app\\Views\\adopciones\\bajaAdopcion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('adopciones/bajaAdopcion', [], true)
+ 5 APPPATH\Controllers\adopcionController.php(13): view('adopciones/bajaAdopcion')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\adopcionController->bajaAdopcion()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adopcionController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

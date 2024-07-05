@@ -1,0 +1,84 @@
+CRITICAL - 2023-05-27 17:50:52 --> Invalid file: "items/altas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/altas.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/altas', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('items/altas')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->altas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:50:57 --> Invalid file: "items/modificar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/modificar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/modificar', [], true)
+ 3 APPPATH\Controllers\Home.php(24): view('items/modificar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->modificar()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:50:58 --> Invalid file: "items/bajas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/bajas.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/bajas', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('items/bajas')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->bajas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:50:59 --> Invalid file: "items/mostrar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/mostrar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/mostrar', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('items/mostrar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:55:28 --> Invalid file: "options.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('options.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('options', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/altas', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('items/altas')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->altas()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:56:21 --> Invalid file: "options.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('options.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('options', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/altas', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('items/altas')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->altas()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:56:48 --> Invalid file: "options.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('options.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('options', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/altas', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('items/altas')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->altas()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 19:55:11 --> Invalid file: "veterinarios/altaMascota.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('veterinarios/altaMascota.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('veterinarios/altaMascota', [], true)
+ 3 APPPATH\Controllers\Home.php(55): view('veterinarios/altaMascota')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->altaVeterinario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 19:56:43 --> Invalid file: "veterinarios/mostrarMascotas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('veterinarios/mostrarMascotas.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('veterinarios/mostrarMascotas', [], true)
+ 3 APPPATH\Controllers\Home.php(70): view('veterinarios/mostrarMascotas')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->mostrarVeterinarios()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
